@@ -1,9 +1,9 @@
 # CTF Challenge: Network Recon & Exploitation
 in this capture the flag (CTF) : will be examined the technique of the reconnaissance,  discovering open and common ports, sniffing, analyzing traffic with Wireshark and exploiting a vulnerability
 
-# the given task : 
+## Task : 
 You are a penetration tester tasked with assessing the security of two target machines (Metasploitable and Ubuntu) on a network. Your Kali machine is the attacker. Your goal is to identify open ports on both targets, capture and analyze network traffic with Wireshark, and exploit a vulnerability on Metasploitable to gain a shell.
-#[~]
+### [~]$%
 
 ## Overview
 
@@ -39,7 +39,9 @@ I confirm that I have explicit permission and authorization to perform penetrati
 Captured network traffic on the attacker machine’s network interface using Wireshark during the scanning process.
 Analyzed captured packets to observe TCP handshakes, port scanning patterns, and service banners.
 Identified suspicious or interesting traffic that could indicate vulnerabilities or misconfigurations.
-###3. Vulnerability Identification and Exploitation
+
+
+### 3. Vulnerability Identification and Exploitation
 Reviewed the open ports and services discovered during scanning to identify known vulnerabilities.
 Focused on vulnerable services such as the vsftpd 2.3.4 backdoor on Metasploitable.
 Used Metasploit Framework to exploit the identified vulnerability and gain remote shell access.
@@ -50,13 +52,13 @@ use exploit/unix/ftp/vsftpd_234_backdoor
 set RHOST <metasploitable-ip>
 run
 ```
-###4. Post-Exploitation Activities
+### 4. Post-Exploitation Activities
 Once shell access was obtained, gathered system information to understand the target environment.
 Checked for additional vulnerabilities or sensitive data that could be leveraged.
 Demonstrated file transfer capabilities by moving an image file from the attacker to the Ubuntu target using SCP.
 Verified successful file transfer and displayed the image on the Ubuntu machine.
 
-###5. Reporting and Recommendations
+### 5. Reporting and Recommendations
 Documented all findings, including open ports, vulnerabilities, exploitation steps, and post-exploitation results.
 Provided recommendations to remediate discovered vulnerabilities and improve overall network security.
 Emphasized the importance of patching vulnerable services and monitoring network traffic for suspicious activity.
