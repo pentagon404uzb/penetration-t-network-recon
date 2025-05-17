@@ -33,8 +33,10 @@ I confirm that I have explicit permission and authorization to perform penetrati
 
 - Used `nmap` to scan the target IP addresses for open ports and running services.
 - Command example:
-  ```bash
+ 
+```bash
   nmap -sS -sV -p- <target-ip>
+```
 ### 2. Traffic Capture and Analysis
 Captured network traffic on the attacker machine’s network interface using Wireshark during the scanning process.
 Analyzed captured packets to observe TCP handshakes, port scanning patterns, and service banners.
