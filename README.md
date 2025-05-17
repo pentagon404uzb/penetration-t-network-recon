@@ -1,5 +1,6 @@
 # CTF Challenge: Network Recon & Exploitation
 in this capture the flag (CTF) : will be examined the technique of the reconnaissance,  discovering open and common ports, sniffing, analyzing traffic with Wireshark and exploiting a vulnerability
+# outbound
 ![Example Image](https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r5.png)
 ## Task : 
 You are a penetration tester tasked with assessing the security of two target machines (Metasploitable and Ubuntu) on a network. Your Kali machine is the attacker. Your goal is to identify open ports on both targets, capture and analyze network traffic with Wireshark, and exploit a vulnerability on Metasploitable to gain a shell.
